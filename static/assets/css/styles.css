@@ -9,13 +9,13 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #5361FF;
-    --white-color: #FAFAFF;
+    --first-color: #495096;
+    --white-color: #eaeaf3;
     --dark-color: #2A3B47;
     --text-color: #697477;
 }
 
-/*===== Fuente y tipografia =====*/
+
 :root{
     --body-font: 'Montserrat', sans-serif;
     --big-font-size: 6.25rem;
@@ -207,7 +207,8 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 295px;
+    width: 200px;
+    border: #FAFAFF;
 }
 
 /* ===== ABOUT =====*/
@@ -220,14 +221,16 @@ img{
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    width: 120px;
-    height: 120px;
+    width: 500px;
+    height: 500px;
     background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
+    align-items: end;
+    margin-bottom: 50%;
 }
 .about__img img{
-    width: 100px;
+    align-items: center;
 }
 .about__subtitle{
     font-size: var(--h2-font-size);
@@ -242,11 +245,15 @@ img{
     margin-bottom: var(--mb-4);
 }
 .about__social-icon{
-    font-size: 1.4rem;
+    font-size: 3rem;
     margin: 0 var(--mb-1);
+    
 }
 .about__social-icon:hover{
     color: var(--first-color);
+}
+.image-main{
+    width: 50%px;
 }
 
 /* ===== SKILLS =====*/
@@ -297,7 +304,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.3);
+    background-color: #495096;
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -351,7 +358,7 @@ img{
 
 /* ===== FOOTER=====*/
 .footer{
-    background-color: var(--dark-color);
+    background-color: #495096;
 }
 .footer__container{
     row-gap: 2rem;
@@ -487,3 +494,122 @@ img{
         right: 24%;
     }
 }
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 60px;
+    margin-left: 20%;
+    
+}
+
+.project {
+    background-color: #f9f9f9;
+    border: 2px solid #495096;
+    border-radius: 15px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-bottom: 100px;
+   
+}
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .project h3 {
+        color: #2c3e50;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .project p {
+        font-size: 1rem;
+        color: #7f8c8d;
+        
+    }
+
+    /* education section */
+
+    .education {
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    text-align: center;
+    padding: 25px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .education h2 {
+        font-size: 2.2rem;
+        color: #26619c;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    padding: 10px 0;
+    max-width: 700px;
+}
+
+.timeline-item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background-color: #495096;
+    }
+
+.timeline-content {
+    margin-left: 50px;
+    padding: 15px;
+    background: #f4f7fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+    .timeline-content h3 {
+        font-size: 1.5rem;
+        color: #495096;
+        margin: 0 0 10px;
+    }
+
+    .timeline-content p {
+        font-size: 1rem;
+        color: #4b4b4b;
+    }
+
+/* RESUME SECTION */
+.resume__button {
+    display: inline-block;
+    background-color: #47b408;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 46%;
+}
+
+.resume__button:hover {
+    background-color: #c8e717;
+}
+

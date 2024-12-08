@@ -11,7 +11,7 @@
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio responsive complete</title>
+        <title>Reboredo - Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -29,6 +29,7 @@
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                     </ul>
                 </div>
 
@@ -45,7 +46,7 @@
                     <h1 class="home__title"><span>{{ home.greetings_1 }}</span><br>{{ home.greetings_2 }}.</h1>
 
                     <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll for more</a>
                     </div>
 
                     <img src="{{ home.picture.url }}" alt="" class="home__img">
@@ -58,8 +59,7 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <!-- <img src="{% static 'assets/img/perfil.png' %}" alt=""> -->
-                        <img src="{{ about.profile_img.url }}" alt="">
+                        <img src="{{ about.profile_img.url }}" alt="" class="image-main">
                     </div>
 
                     <div>
@@ -122,7 +122,74 @@
                     {% endfor %}
                     
                 </div>
+            </div>
+            <section id="projects">
+                <h2 class="section-title">Activities</h2>
+                <div class="project-grid">
+                    <div class="project">
+                        <h3>HTML/CSS Website</h3>
+                        <p>A simple website I built using HTML and CSS.</p>
+                        <ul>
+                            <li>• A clean and user-friendly layout.</li>
+                            <li>• Interactive navigation.</li>
+                            <li>• Custom styling for good visuals.</li>
+                        </ul>
+         
+                    </div>
+
+                    <div class="project">
+                        <h3>Django Web App</h3>
+                        <p>A web application built using Django for backend functionality.</p>
+                        <ul>
+                            <li>• Showcases my projects and skills in using Django.</li>
+                            <li>• Static content with a clean layout.</li>
+                            <li>• Highlights my work in a professional manner.</li>
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <h3>Point of Sale System</h3>
+                        <p>• A responsive POS built with HTML, CSS, and PYTHON (DJANGO) for better user experience.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Creating Text-Based Java Projects (OOP)</h3>
+                        <p>I have created several text-based Java projects, ranging from simple command-line applications to systems. These projects have helped me strengthen my understanding of Java fundamentals like object-oriented programming etc. </p>
+                        <p> Notable projects include calculators, Systems, and mini-games, which have enhanced my problem-solving, debugging, and coding efficiency.</p>
+                    </div>
+                </div>
+            </section>
                 
+            </section>
+            <!--===== EDUCATION =====-->
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2023 - Present</h3>
+                            <p>BS Information Technology at STI College, Sta. Maria</p>
+                            <p>(Tertiary)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2021 - 2023</h3>
+                            <p>Immaculate Conception Polytechnic (Senior HighSchool) - STEM Strand</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2016 - 2021</h3>
+                            <p>Sta.Cruz HighSchool / Pulong Buhangin National HighSchool</p>
+                            <p>(High School Diploma)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2010 - 2016</h3>
+                            <p>(Primary Education (Elementary))</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--===== CONTACT =====-->
@@ -132,42 +199,40 @@
                 <div class="contact__container bd-grid">
                     <div class="contact__info">
                         <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">info.mail.com</span>
-<!-- 
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+20 999-999</span>
+                        <span class="contact__text">tristanreboredo1018@gmail.com </span>
 
                         <h3 class="contact__subtitle">ADRESS</h3>
-                        <span class="contact__text">My contry</span> -->
+                        <span class="contact__text">Sta.Maria Bulacan, Philippines</span>
                     </div>
 
                     <div class="contact__info">
 
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+20 999-999</span>
+                        <h3 class="contact__subtitle">PHONE NUMBER</h3>
+                        <span class="contact__text">+63 965 714 8314</span>
 
                     </div>
-
-                    <!-- <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Enviar" class="contact__button">
-                    </form> -->
                 </div>
             </section>
         </main>
+
+         <!--===== RESUME =====-->
+
+         <section id="resume" class="resume section">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume__container">
+                <a href="{% static 'assets/img/Resume.pdf' %}" class="resume__button" download>
+                    <i class='bx bx-download'></i> Download CV
+                </a>
+            </div>
+        </section>
+        
 
         <!--===== FOOTER =====-->
         <footer class="footer section">
             <div class="footer__container bd-grid">
                 <div class="footer__data">
-                    <h2 class="footer__title">JHON DOE</h2>
-                    <p class="footer__text">I'm Jhon Doe and this is my personal website</p>
+                    <h2 class="footer__title">Developed by Tristan Reboredo</h2>
+                    <p class="footer__text">My personal portolio website.</p>
                 </div>
 
                 <div class="footer__data">
@@ -183,9 +248,9 @@
                 
                 <div class="footer__data">
                     <h2 class="footer__title">FOLLOW</h2>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-reddit' ></i></a>
                     <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-' ></i></a>
                 </div>
 
 

@@ -31,3 +31,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 # Portfolio
 admin.site.register(Portfolio)
+
+
+
+
